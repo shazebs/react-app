@@ -1,0 +1,13 @@
+.navbar {
+    color: dodgerblue;
+    border: 2px dashed white;
+}
+
+.navlink {
+    /* border: 2px dashed yellow; */
+    cursor: pointer;
+    margin: 5px;
+}
+    .navlink:hover {
+        color: limegreen;
+    }

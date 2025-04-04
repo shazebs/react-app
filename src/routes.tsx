@@ -1,17 +1,23 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
+import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
+import Jobs from "./pages/Jobs";
 import Notes from "./pages/Notes";
 import Underground from "./pages/Underground";
 
 const AppRoutes:React.FC = () => {
     return (
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/underground" element={<Underground />} />
-            <Route path="/notes" element={<Notes />} />
-        </Routes>
+        <Router>
+            <Navigation />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/jobs" element={<Jobs />} />
+                <Route path="/notes" element={<Notes />} />
+                <Route path="/underground" element={<Underground />} />
+            </Routes>
+        </Router>
     );
 };
 

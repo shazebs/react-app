@@ -1,29 +1,28 @@
-import { useState } from "react";
 
 import "../assets/Underground.css";
 
 function Underground() {
-  const [sampleCount, setSampleCount] = useState(0);
+  // const [sampleCount, setSampleCount] = useState(0);
 
-  const userLoggedIn = "admin";
+  // const userLoggedIn = "admin";
 
-  const marketplaceUsers = [
-    { name: "User-M", id: 1, sex: "M" },
-    { name: "User-F", id: 2, sex: "F" },
-    { name: "User-TM", id: 3, sex: "TM" },
-    { name: "User-TF", id: 4, sex: "TF" },
-  ];
+  // const marketplaceUsers = [
+  //   { name: "User-M", id: 1, sex: "M" },
+  //   { name: "User-F", id: 2, sex: "F" },
+  //   { name: "User-TM", id: 3, sex: "TM" },
+  //   { name: "User-TF", id: 4, sex: "TF" },
+  // ];
 
-  const listMarketplaceUsers = marketplaceUsers.map((user) => (
-    <li key={user.id}>
-      <span
-        className="user-item"
-        onClick={() => handleUserNameClick(user.name)}
-      >
-        {user.name}
-      </span>
-    </li>
-  ));
+  // const listMarketplaceUsers = marketplaceUsers.map((user) => (
+  //   <li key={user.id}>
+  //     <span
+  //       className="user-item"
+  //       onClick={() => handleUserNameClick(user.name)}
+  //     >
+  //       {user.name}
+  //     </span>
+  //   </li>
+  // ));
 
   function login() {
     alert("You clicked login!");
